@@ -1,0 +1,31 @@
+#selecao {
+    border: 2px #aaf solid;
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+#preview{
+margin: -8px;
+}
+.pesquisar{
+    display: none;
+}
+label {
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    padding: 6px 20px
+  }
+#limpar{
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    padding: 6px 20px
+}
+#fontfamily{
+    font-family: 'Itim', cursive;
+}

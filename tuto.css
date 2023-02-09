@@ -1,0 +1,193 @@
+/*comentário do css*/
+
+ /* {
+  margin:0; o asterisico serve como global
+  }    
+*/  
+
+body{
+    background-color: bisque;
+    height: 100vw;
+}
+#gokuFixado{
+    position: fixed;
+    z-index: 4;
+    float: right;
+    width: 120px;
+    right: 5%;
+}
+.format{
+    background-color:aqua;
+    width:140px;
+    line-height: 0em;
+}
+#liststylesquare{
+    list-style-type: square;
+}
+#liststyleroman{
+    list-style-type: upper-roman;
+}
+#liststylegreek{
+    list-style-type: lower-greek;
+}
+#liststylecircle{
+    list-style-type:circle;
+}
+#liststylearmenian{
+    list-style-type:armenian;
+}
+.evoluarapido{
+    border:1px solid red;
+    margin: 120px;
+    padding: 60px;/*preenchimento interno*/
+    text-align: center;
+}
+.spandoido{
+    color:red;
+}
+.maisDivs{
+    width: 20%;
+    height: 110px;
+    border: 2px solid red;
+    padding: 5px;
+}
+#overflowAuto{
+    overflow: auto;
+}
+#overflowHidden{
+    overflow:hidden;
+}
+#overflowx{
+    width: 80px;
+   /*overflow-x:scroll;*/
+   /*overflow-x:auto;*/
+    overflow-y:auto;
+}
+#overflowy{
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+#boxModel{
+    width:200px;
+}
+#imagemModelo{
+    margin: 30px 50px 30px 50px;
+    border:15px solid rgb(57, 122, 197);
+    padding: 20px 50px;
+    width:800px;
+    height: 380px;
+    color:rgb(110, 40, 40);
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: rgb(172, 172, 172);
+}
+#imagemModeloBox{
+    margin: 30px 50px 30px 50px;
+    border:15px solid rgb(57, 122, 197);
+    padding: 20px 50px;
+    width:800px;
+    height: 380px;
+    color:rgb(110, 40, 40);
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: rgb(172, 172, 172);
+    box-sizing: border-box;
+}
+.bordaPadrao{
+    border: 1px solid blue;
+    margin: 10px;
+}
+
+#bordaTopDiferente{
+    border-top: 10px solid yellow;
+}
+.bordasZ{
+    margin: 10px 5px 10px 25px;
+    padding: 2px 1px 2px 10px;
+    width:200px;
+    height: 30px;
+    border:2px solid black;
+}
+
+#borderSolid{border: 5px solid red;}
+#borderDotted{border: 5px Dotted red;}
+#borderDashed{border: 5px dashed red;}
+#borderDouble{border: 5px double red;}
+#borderGroove{border: 5px groove red;}
+#borderInset{border: 5px inset red;}
+#borderOutset{border: 5px outset red;}
+#borderNone{border: 5px none red;}
+#borderHidden{border: 5px hidden red;}
+
+#gokuPiscando1{
+    width: 200px;
+    position: relative;
+}
+#gokuPiscando2{
+    width: 200px;
+    position: absolute;
+}
+#gokuPiscando3{
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+}
+.openingDBZ{
+    color:red;
+    font-weight: 700;
+    z-index: 2;
+}
+#openingDBZ3{
+    position: absolute;
+    z-index:3;
+}
+.cascataVerde{
+    color: green;
+}
+.corRosa {
+    color:pink;
+}
+#fakeRed{
+    color: red;
+}
+.rodape{
+    background-color: beige;
+    clear: both;
+}
+.rodapeimg{
+    float:right;
+    width: 5%;
+}
+.rodapeHome{
+    text-align: center;
+    width: 20%;
+    border: 2px solid blue;
+    margin-left: 40%;
+    margin-right: 40%;
+
+}
+#shorttables{
+    border:2px solid black;
+    margin:30px;
+    padding: 10px;
+}
+.shorttbred{
+    background-color:rgb(220,30,90);
+}
+.shorttbgreen{
+    background-color:rgb(90,220,30);
+}
+.shorttbblue{
+    background-color:rgb(30,90,220);
+}
+.caixaya{
+    background-image: url("Imagens/rei-ayanami-wallpaper-hd-1920x1200-215468.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 45vw;
+    height: 22vw;
+}
+.caixaya::after{
+    content: "background-image: url(Imagens/rei-ayanami-wallpaper-hd-1920x1200-215468.jpg) background-repeat: no-repeat; background-position: top right; width: 45vw; height: 22vw";
+    font-weight: bold;
+}

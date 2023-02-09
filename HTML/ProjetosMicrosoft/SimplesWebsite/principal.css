@@ -1,0 +1,79 @@
+html{
+    height: 100%;
+}
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+body{
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+#ayadiv{
+    position: absolute;  
+    width: 70%; 
+    height: 125px;  
+    overflow: hidden;   
+    border-radius: 50px;
+    border: 1px solid #6d64f0;
+    box-shadow: 5px 10px 5px black; 
+}
+#ayaImagem{
+    position:inherit;
+    overflow: hidden;
+    margin-top: -180px;
+}
+#ayaname{
+    position: relative;
+    text-align: center;
+    color: rgb(10, 33, 163);
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+
+.light-theme {
+    background-image: url(../../../Imagens/rei-ayanami-wallpaper-hd-1920x1200-215468.jpg);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+  
+  .dark-theme {
+    background-image: url(../../../Imagens/Ayanami_Rei_Neon_Genesis_Evangelion_1920x1200.jpg);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+  #botoesInterativos{
+    position: absolute;
+    margin-top: 180px;
+  }
+  .tutorial{
+    margin-top: 280px;
+    position:relative;
+    top: 20px;
+    left: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }

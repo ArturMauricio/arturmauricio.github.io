@@ -9,5 +9,6 @@ div{
   border: 10px solid blue;
 }
 .menu{
-   display:inline;
+   position:float left;
+   width:15%;
 }

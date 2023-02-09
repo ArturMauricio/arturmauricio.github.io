@@ -1,0 +1,712 @@
+<!Doctype html> <!--informa ao Brower que este arquivo é HTML-->
+<html lang="pt-br">  <!--Hyper Text Markup Language o language informa a lingua do código.-->
+
+<head><!--elemento que contém informações sobre a página HTML-->
+<meta charset="utf-8"><!--codificação de caracteres especiais-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--portabilidade para dispositivos mobiles-->
+
+<meta name="author" content="Artur Mauricio">
+<meta name="description" content="Um site para organizar a documentação html">
+<!--esse meta name="description" auxilia no SEO (search engine optimization) mecanismos de busca como google
+quando alguém encontra o site no google ele irá aparecer com o Titulo mas embaixo uma descrição sobre o site-->
+
+<!--Há ainda meta de redes sociais como o Open Graph do Facebook-->
+
+<link rel="icon" href="Imagens/favicon.png">
+<!--Link rel deve ser configurado para cada aparelho nomalmente se utiliza um framework-->
+
+<link rel="stylesheet" type="text/css" href="tuto.css">
+
+<title>Tutorial HTML</title><!--elemento contendo o Titulo da página mostrado no Browser-->	
+<!-- <meta style=""
+criar um script pra ficar atualizando a página cada vez que é salvo o arquivo<script type="text/javascript">location.reload()</script> script incompleto-->
+<style>
+    #cascataVermelha1{color: red;}/*style para competição de Poder em alterar um elemento*/
+	#cascataVermelha2{color: red;}/*style para competição de Poder em alterar um elemento*/
+    </style>
+</head>
+
+<body><!--Todo o conteúdo visual vem aqui-->
+<p>
+	<img src="Imagens/goku.gif" id="gokuFixado">
+</p>
+<h3 id="Organizador">Organizador</h3>
+	<ul>
+		<li>
+			<a href="#html">Html</a>
+		</li>
+		<li>
+			<a href="#css">CSS</a>
+		</li>
+		<li>
+			<a href="#divsAqui">Divs</a>
+		</li>
+		<li>
+			<a href="#styleforces">Força dos Estilos</a>
+		</li>
+		<li>
+			<a href="pagina2.html#parteExemplo">ir para uma marcação de outra página? tbm dá!</a>
+		</li>
+		<li>
+			<a href="HTML/ProjetosMicrosoft/SimplesWebsite/index.html">AyanamiPage</a>
+		</li>
+		<li>
+			<a href="XeYdeImagem/projetinho.html">Saber os Pontos X e Y de uma Imagem</a>
+		</li>
+		<li>
+			<a href="#rodape">rodapé</a>
+		</li>
+	</ul>
+<!--aplicando css na class format-->
+<div>
+	<h1 id="html" class="format">Html h1*</h1><!--Titulos vão de H1 até H6-->
+	<h2 class="format">h2*</h2>
+	<h3 class="format">h3*</h3>
+	<h4 class="format">h4*</h4>
+	<h5 class="format">h5*</h5>
+	<h6 class="format">h6*</h6>
+</div>
+
+<p>p* paragrafo normal, <em>em* enfase, </em><strong>strong* strong, </strong><br>
+	<b>b* bold(negrito), </b><i>i* itálico, </i><mark>mark* texto marcado, </mark><br>
+	<small>small* texto menor, </small><del>del* texto riscado, </del><br>
+	<ins>ins* texto sublinhado, </ins><sub>sub* texto subscrito, </sub><sup>sup* texto sobrescrito.</sup>
+</p>
+
+<hr>
+
+<h2>Algumas tags</h2>
+	<ul>
+		<li>hr* cria a linha</li>
+		<li>br* pula uma linha</li>
+		<li>li* item de lista</li>
+		<li>ul* lista desordenada</li>
+		<li>ol* lista ordenada</li>
+		<li>a* link</li>
+	</ul>
+<ol id="liststylesquare">
+	<li>list-style-type:square</li>
+	<li>list-style-type:square</li>
+</ol>
+<ol id="liststyleroman">
+	<li>list-style-type:roman</li>
+	<li>list-style-type:roman</li>
+</ol>
+<ol id="liststylegreek">
+	<li>list-style-type:lower-greek</li>
+	<li>list-style-type:lower-greek</li>
+</ol>
+<ol id="liststylecircle">
+	<li>list-style-type:circle</li>
+	<li>list-style-type:circle</li>
+</ol>
+<ol id="liststylearmenian">
+	<li>list-style-type:armenian</li>
+	<li>list-style-type:etc..........</li>
+</ol>
+<p>
+	<a href="pagina2.html">href="arquivo" buscar arquivo na mesma raiz <em>página 2</em></a><br>
+	tambem pode ser feito href="./arquivo"<br>
+	<a href="html/index.html">href="Nome_da_pasta/arquivo" buscar arquivo em uma pasta</a><br>
+	<a href="../Artes/HelloWorld/HelloWorld.png">href="../" serve para subir uma pasta "../Artes/HelloWorld/HelloWorld.png"</a><br>
+</p>
+<p> nesses casos sempre utilizar links absolutos como http://www.google.com, pois se colocarmos um link relativo como google.com <br>
+	o sistema pensará estar buscando um arquivo com o nome google.com no mesmo diretorio.
+</p>
+<p>
+	<a href="https://www.w3schools.com" alt="W3Schools.com">tag a* cria o link e o atributo href="" infomrma o caminho que o link levará</a>, a tag contém conteúdo que pode ser uma imagem. <br>
+	O atributo target="_blank" abre em uma nova aba e o atributo download informa que o item pode ser baixado.
+</p>
+<p>img src="" alt="" width="" Imagem com texto alternativo e largura definida em 150px, alt="" siginifica texto alternativo para quando a imagem não carregar<br> 
+	imagens também podem estar hospedadas no computador servidor e serem buscadas pelo source tipo assim src="/images/img_girl.jpg".
+</p>
+<p>img src="https://source.unsplash.com/random" busca uma imagem randomica
+</p>
+<p>
+	<img src="https://source.unsplash.com/random" title="imagem aleatória" width="150px">
+</p>
+
+<p>title="" é o atributo responsável por mostrar um texto de titulo quando o mouse esta sobre o elemento
+</p>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+citações longas utilizam blockquote* e são identadas para o meio da tela, utilizamos o atributo cite="" para nos dizer de onde tiramos o  texto .........................................................................................................................
+</blockquote>
+
+<p>
+	<q>citações curtas utilizam a tag q* e são adicionadas aspas
+	</q>
+</p>
+
+<p>A tag<abbr title="abreviação"> abbr*</abbr> utiliza o atributo titulo para explicar o significado do que foi abreviado
+</p>
+
+<addres id="adress">
+	Tag adress*<br>
+	Utilizada para: endereço do proprietário da página<br>
+	Entre em contato<br>
+	Nome: Artur<br>
+	<a href="mailto:artur-mauricio@hotmail.com">E-mail: artur-mauricio@hotmail.com </a>href="mailto:arturm...."<br>
+	<a href="tel:+5515996339655">Telefone</a> href="tel:+55...."
+</addres>
+
+<p cite="http://www.worldwildlife.org/who/index.html">
+há um atributo e uma tag com o nome cite,<br>
+O atributo cite="" é utilizado como o href="" para nos dizer de onde que aquilo foi tirado porém sem que isso apareça para o usuário final.<br>
+A tag cite* é utilizada para nomes de obras, livros e pinturas exemplo:<br>
+A crítica não gostou de <cite>Do outro lado</cite>, nova obra de James Russevel.   
+</p>
+
+<p>
+	A tag bdo ou bi-direction serve para escrever um texto em outras direções<br>
+	Normalmente utilizamos o atributo dir=""para dizer a direção.<br>
+	bdo dir="rtl"escreve o texto da direita para a esquerda<br>
+	<bdo dir="rtl">esta linha esta ao contrário</bdo>
+</p>
+
+<h1 id="css">CSS</h1>
+	<h2>Seletores CSS</h2>
+		<ul>
+			<li>*{} seletor global</li>
+			<li>tag tipo h1, p, html</li>
+			<li>pseudo-elemento tipo :after</li>
+			<li>class="exemplo" .exemplo</li>
+			<li>id="exemplo" #exemplo</li>
+		</ul>
+			<p>Para dar 2 classes ao mesmo elemento basta dar um espaço class="class1 class2"
+			</p>
+			<p>supondo que tenhamos 2 elementos com a mesma classe porem queremos adicionar uma nova estilização a apenas um deles
+			</p>
+
+<pre>&lt;h1 class="warning"> titulo &lt;/h1>
+	&lt;p class="warning">Nao Fume&lt;/p>
+
+como colocar borda em apenas 1 deles?
+basta especificar no CSS 
+
+.warning{color:red;}
+h1.warning{border:1px solid blue;}
+</pre>
+
+<h3>Descendentes CSS</h3>
+<p>Quando declaramos no css:
+	<pre> 
+		ul li { /*deve haver esse espaçamento entre pai ul* e filho li*  */
+		color:red; /*essa especifidade faz com que aplique apenas nas li que estão dentro de tags ul*/
+	}			/* funciona para classe e id tambem. */
+	</pre>
+</p>
+
+<p style="background-color:Tomato;">Aqui adicionamos uma cor de fundo utilizando o nome da cor<br> utilizamos o atributo style="" para estilizar<br>neste caso utilizamos style="background-color:...;"assim queremos pintar o fundo da tag<br>e após isso definimos qual cor queremos style="background-color:Tomato;"<br></p>
+<p style="color:red;">style="color:red" pinta a cor do texto</p>
+<p style="border:2px solid blue;">style="border:2px solid blue;" criamos uma borda solida de 2 pixels azul</p>
+<p>as cores também podem ser especificadas usando valores RGB, valores HEX, valores HSL, valores RGBA e valores HSLA.</p>
+
+	<p style="color:rgb(255,99,71);">style="color:rgb(255,99,71);"</p>
+	<p style="color:#ff6347;">style="color:#ff6347;"</p>
+	<p style="color:hsl(9, 100%, 64%);">style="color:hsl(9, 100%, 64%);"</p>
+	<h3>Adicionando transparencia utilizamos rgba ou hsla</h3>
+	<p>a transparencia vai de 0 a 1</p>
+	<p style="background-color:rgba(255, 99, 71, 0);">style="background-color:rgba(255, 99, 71, 0.0);</p>
+	<p style="background-color:rgba(255, 99, 71, 0.1);">style="background-color:rgba(255, 99, 71, 0.1);</p>
+	<p style="background-color:rgba(255, 99, 71, 1);">style="background-color:rgba(255, 99, 71, 1.0);</p>
+	<p style="background-color:rgba(255, 99, 71, 0.5);">style="background-color:rgba(255, 99, 71, 0.5);</p>
+	<p style="background-color:hsla(9, 100%, 64%, 0.5);">style="background-color:hsla(9, 100%, 64%, 0.5);"</p>
+
+	<p style="font-family: Helvetica, sans-serif;">style="font-family: Helvetica, sans-serif;" muda a familia da letra, sempre colocar sans-serif ou serif como 2 opção, essas opções escolherão a fonte padrão do dispositivo<br>serif é uma fonte padrão complexa com detalhes nas letras tipo Time News Roman<br>sans-serif é uma fonte simples pode ser arial por exemplo.<br>
+		cursive e monospace são tipos de fontes genéricas
+	</p>>
+<p style="font-size:1.5em;">style="font-size:1.5em;"deixa o paragrafo 1.5x maior pois em é o tamanho padrão de fonte.<br>pode ser usada em qualquer parte, pode ser 2em 3em ou outros.</p>
+<p style="font-weight: bold;">style="font-weight: bold;" deixa um texto em negrito</p>
+<p style="line-height: 1.5em";>style="line-height: 1.5em"; <br>deixa as linhas com 150% do tamanho do texto.</p>
+<p style="text-align:center;">style="text-align:center;" pode ser left, right ou justify</p>
+<p style="text-decoration: underline red;">style="text-decoration: underline red;",<br>text-decoration também pode ser none ou até</p>
+<p style="text-decoration: underline overline">underline overline que cria 2 linhas uma em cima outra em baixo</p>
+
+<h1>Elementos estilizados a partir do tuto.css</h1>
+<h1 class="evoluarapido">Evolua Rápido</h1>
+<button onclick="document.location='imagens/artur.jfif'">HTML Tutorial</button>
+
+<p >vamos falar sobre a tag <span class="spandoido">span*</span></p>
+<h1 id="divsAqui">Divs</h1>
+<div  class="maisDivs">
+<p>Utilizando css podemos fazer diversas coisas.<br>
+width:20% a div se quebra em 20% da tela<br>
+height:110px a div desce até ter 110 e termina<br>
+Porém se o que eu colocar dentro da div não couber dentro da div?<br>
+ai teremos que utilizar overflow, overflow-x ou overflow-y</p>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<div class="maisDivs" id="overflowAuto">
+	<h3>Overflow:auto aplicado</h3>
+	<p>Utilizando css podemos fazer diversas coisas.<br>
+		width:20% a div se quebra em 20% da tela<br>
+		height:110px a div desce até ter 110 e termina<br>
+		Porém se o que eu colocar dentro da div não couber dentro da div?<br>
+		ai teremos que utilizar overflow, overflow-x ou overflow-y</p>
+</div>
+<br>
+<div class="maisDivs" id="overflowHidden">
+	<h3>Overflow:hidden aplicado (tudo que esta fora some)</h3>
+	<p>Utilizando css podemos fazer diversas coisas.<br>
+		width:20% a div se quebra em 20% da tela<br>
+		height:110px a div desce até ter 110 e termina<br>
+		Porém se o que eu colocar dentro da div não couber dentro da div?<br>
+		ai teremos que utilizar overflow, overflow-x ou overflow-y</p>
+</div>
+<br>
+<div class="maisDivs" id="overflowx">
+	<h3>Overflow-x aplicado</h3>
+	<p> /*overflow-x:scroll;*/
+		/*overflow-x:auto;*/ </p>
+	<p>Utilizando css podemos fazer diversas coisas.
+		width:20% a div se quebra em 20% da tela
+		height:110px a div desce até ter 110 e termina<br>
+		Porém se o que eu colocar dentro da div não couber dentro da div?<br>
+		ai teremos que utilizar overflow, overflow-x ou overflow-y</p>
+</div>
+<br>
+<div class="maisDivs" id="overflowy">
+	<h3>Overflow-y aplicado </h3>
+	<p>além disso damos overflow-x:hidden; para que ele nao apareça</p>
+	<p>Utilizando css podemos fazer diversas coisas.<br>
+		width:20% a div se quebra em 20% da tela<br>
+		height:110px a div desce até ter 110 e termina<br>
+		Porém se o que eu colocar dentro da div não couber dentro da div?<br>
+		ai teremos que utilizar overflow, overflow-x ou overflow-y</p>
+</div>
+<h3>Imagem Modelo</h3>
+<div>
+	<img src="Imagens/CSS-Box-Model.webp" id="boxModel">
+</div>
+<h3>Reproduzindo a Imagem Modelo</h3>
+<div id="imagemModelo">
+	<pre> 
+		margin: 30px 50px 30px 50px;
+		border:15px solid rgb(57, 122, 197);
+		padding: 20px 50px;
+		width:800px;              *desrespeitado pois soma com os padding
+		height: 380px;
+		color:rgb(110, 40, 40);
+		font-weight: bold;
+		font-size: 1.3em;
+		background-color: rgb(172, 172, 172);
+
+<b>neste caso o width da caixa é padding-left + width + padding right = 50+800+50</b>
+	</pre>
+</div>
+<div id="imagemModeloBox">
+	<pre> 
+		margin: 30px 50px 30px 50px;
+		border:15px solid rgb(57, 122, 197);
+		padding: 20px 50px;
+		width:800px;               *respeitado 800px
+		height: 380px;
+		color:rgb(110, 40, 40);
+		font-weight: bold;
+		font-size: 1.3em;
+		background-color: rgb(172, 172, 172);
+		box-sizing: border-box;
+
+<b>neste caso o width é real graças ao box-sizing: border-box;</b>
+	</pre>
+</div>
+	 
+
+<div class="maisDivs" id="bordaTopDiferente">
+<p>após a selção da borda completa marquei que queria a borda top diferente então border-top:10px solid yellow;</p>
+</div>
+<br>
+<div class="bordasZ" id="borderSolid">
+	<p>borda 5px solid</p>
+</div>
+<br>
+<div class="bordasZ" id="borderDotted">
+	<p>borda 5px dotted</p>
+</div>
+<br>
+<div class="bordasZ" id="borderDashed">
+	<p>borda 5px dashed</p>
+</div>
+<br>
+<div class="bordasZ" id="borderDouble">
+	<p>borda 5px Double</p>
+</div>
+<br>
+<div class="bordasZ" id="borderGroove">
+	<p>borda 5px groove</p>
+</div>
+<br>
+<div class="bordasZ" id="borderInset">
+	<p>borda 5px Inset</p>
+</div>
+<br>
+<div class="bordasZ" id="borderOutset">
+	<p>borda 5px Outset</p>
+</div>
+<br>
+<div class="bordasZ" id="borderNone">
+	<p>borda 5px None</p>
+</div>
+<br>
+<div class="bordasZ" id="borderHidden">
+	<p>borda 5px Hidden</p>
+</div>
+
+<h2>Display: Block x Display: Inline</h2>
+<div class="bordaPadrao"><p>Display block ocupa toda a linha</p></div>
+<span class="bordaPadrao">display inline ocupa apenas o que é usado </span>
+<b class="bordaPadrao">podendo colocar outros elementos </b><i class="bordaPadrao">na mesma linha</i><br>
+<span class="bordaPadrao">foi adicionado margin de 10px para todos os lados</span>
+<b class="bordaPadrao">porem os elementos que estão definidos com display inline não respeitam height</b><i class="bordaPadrao">e apenas aplicam o width</i><br>
+<span class="bordaPadrao">tanto faz se for margin padding ou content, apenas width é respeitado </span><b class="bordaPadrao">height é ignorado</b><br>
+<i  class="bordaPadrao">para alterar um elemento basta adicionar display:inline ou display:block</i>
+
+<h2>Margin</h2>
+<p>Margin aceita de 1 à 4 valores, pixels ou % e até mesmo auto.
+<br>margin auto é feita automaticamente apenas para os lados.
+<br>Em display:inline as margins só vão na horizontal
+<br>Em diplay:block as margens vão para todos os lados.
+</p>
+
+<br>
+<div><h3>imagem com position:relative</h3>
+	<img src="Imagens/goku2.gif" id="gokuPiscando1">
+	<p class="openingDBZ">Posso presentir o perigo e o caos.<br>
+	E ninguém agora vai me amedrontar</p>
+</div>
+<br>
+<div><h3>imagem com position:absolute</h3>
+	<img src="Imagens/goku2.gif" id="gokuPiscando2">
+	<p class="openingDBZ">Posso presentir o perigo e o caos.<br>
+	E ninguém agora vai me amedrontar</p>
+</div>
+<br>
+<br>
+<br>
+<div><h3>imagem com position:absolute e z-index colocando o texto para aparecer depois da imagem</h3>
+	<img src="Imagens/goku2.gif" id="gokuPiscando3">
+	<p class="openingDBZ" id="openingDBZ3">Posso presentir o perigo e o caos.<br>
+	E ninguém agora vai me amedrontar</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>	
+<img src="Imagens/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<p> Aqui utilizamos o usemap="workmap" que serve para clicar em determinadas partes da imagem</p>
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.dell.com/pt-br/shop/notebooks/sf/inspiron-laptops">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.apple.com/br/shop/buy-iphone/iphone-14-pro">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://wecoffee.com.br/">
+</map>
+
+
+<h1 id="styleforces">Definições mais fortes de estilo</h1>
+
+<h2>1. A Cascata</h2>
+<ol>
+	<li style="font-size: 2em;">style="" <strong><i>atributo inline</i></strong></li>
+	<li style="font-size: 1.5em;">&lt;style&gt;&lt;/style&gt; <strong><i>tag style</i></strong></li>
+	<li style="font-size: 1em;">css{}<strong><i>tag link rel="stylesheet" type="text/css" href=""</i></strong></li>
+</ol>
+
+<h4 class="cascataVerde">Importa cor Verde do css</h4>
+<h4 class="cascataVerde" id="cascataVermelha1">Importa cor Verde do css e Vermelho da tag &lt;style&gt; &lt;/style&gt;</h4>
+<h4 class="cascataVerde" id="cascataVermelha2" style="color: blue;">Importa cor Verde do css e Vermelho da tag &lt;style&gt; &lt;/style&gt; e utiliza o atributo style="color:blue" para ficar azul</h4>
+
+<br>
+<h2>2. A Especifidade</h2>
+<p>É um calculo matemático de importancia baseado na Especifidade</p>
+<ul>
+	<li>1000. Inline atribute style=""<em style="color:red;"> -> </em>dentro de uma tag html style="color:black"</li>
+	<li>100. ID selector<em style="color:red;"> -> </em>no css #id {color: purple;}</li>
+	<li>10. classes e attribute selectors<em style="color:red;"> -> </em>no css .class {color:yellow;}</li>
+	<li>1. element type selector e pseudo-elements<em style="color:red;"> -> </em>no css h1{color:red;}</li>
+	<li>0. Os mais fracos são universal selector, combinators e negation pseudo-class<em style="color:red;"> -> </em>no css * {color:green;}</li>
+</ul>
+<pre>
+	h1.class#id{color:orange;}
+	1 + 10 + 100 = 111 (força de especifidade)
+
+	body h1{ color:pink;}
+    	1 + 1 = 2 (força de especifidade)
+</pre>
+<pre>
+	html
+		<h5 style="margin-left: 120px;"class="corRosa">&lt;h5&gt;Titulo&lt;strong&gt;<strong id="fakeRed">olá</strong>&lt;/strong&gt;&lt;/h5&gt;</h5>
+		&lt;!-- O strong não será pintado de rosa e pegará a definição padrão vermelha-->
+	css
+		h5 {color:pink}
+		* {color:red}
+
+		&lt;!-- para isso basta adicionar mais especifidade no css -->
+
+	css
+		h5, h5 strong{color:pink;}
+		* {color:red}
+	html
+		<h5 style="margin-left: 120px;"class="corRosa">&lt;h5&gt;Titulo&lt;strong&gt;<strong class="corRosa">olá</strong>&lt;/strong&gt;&lt;/h5&gt;</h5>
+</pre>
+<h3>3. !important</h3>
+<p>A regra !important não é uma boa prática, ela basicamente remove a cascata e executa aquilo<br>
+	Por exemplo o css p{color:blue !important;} transforma todos os P em azul não importa o que.<br>
+	A regra é muito útil pois quando importamos uma biblioteca de outra pessoa e não conseguimos modificar algo que ela fez<br>
+	podemos utilizar a regra !important para modificar uma das regras que ele utilizou.
+</p>
+
+<h2>At-rules ou @rules</h2>
+<ul>
+	<caption>São regras CSS utilizam o @</caption>
+	<li>@import</li>
+	<li>@media</li>
+	<li>@font-face</li>
+	<li>@keyframes</li>
+</ul>
+<h3>@import</h3>
+	<p>
+		serve para incluir um css externo<br>
+		@import=url("https://www.tantofaz.com/arquivo.css")
+	</p>
+<h3>@media</h3>
+	<p>
+		serve para adicionar regras de responsividade<br>
+		@media (min-width:500px){<br>
+			/*regras aqui */
+		}
+	</p>
+<h3>@font-face</h3>
+	<p>
+		serve para adicionar fontes externas <br>
+		@font-face{<br>
+			/*regras aqui */
+		}
+	</p>
+<h3>@keyframes</h3>
+	<p>
+		serve para animações<br>
+		@keyframes nomedaAnimação{<br>
+
+		}
+	</p>
+<h2>ShortHand</h2>
+<pre>    
+
+    /* background properties */
+    background-color: #000;
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat; <b>o background sempre irá querer repetir</b>
+    background-position: left top;
+
+    /* background shorthand*/
+    background: #000 url(images/bg.gif) no-repeat left top;
+
+    /* font properties */
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+
+    /* font shorthand */ 
+    font: italic bold .8em/1.2 Arial, sans-serif;
+</pre>
+<p>Não irá considerar propriedades anteriores, ou seja, caso faça um shorthand, apenas ele será considerado, <br>
+	quaisquer propriedades anteriores serão substituídas pelas do shorthand.<br>
+
+	Os valores que não forem especificados irão assumir o valor padrão.<br>
+	portanto caso utilize o estilo shorthand é necessário colocar todas as propriedades.<br> 
+	caso não coloque alguma ficará padrão mesmo que adicione logo outro por exemplo:
+	<pre>
+		font-weight: bold;
+		font: italic .8em/1.2 Arial, sans-serif;<br>
+		não reconhecerá o bold, pois ao utilizar o shorthand font todas as propriedades que
+		não estejam definidas, utilizaram o padrão neste caso o padrão não é bold e sim normal
+		portanto é como se escrevessemos assim:<br>
+		font:  italic <b>normal</b> .8em/1.2 Arial, sans-serif;
+	</pre>
+
+	<table id="shorttables">
+		<caption>Principais Shorthands</caption>
+		<colgroup>
+			<col class="shorttbred"width="80px">
+			<col class="shorttbgreen"width="80px">
+			<col class="shorttbblue"width="80px">
+			<col class="shorttbred"width="80px">
+			<col class="shorttbgreen"width="80px">
+			<col class="shorttbblue"width="80px">
+		</colgroup>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Prop-1</th>
+				<th>Prop-2</th>
+				<th>Prop-3</th>
+				<th>Prop-4</th>
+				<th>Prop-5</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>font</th>
+				<td>style</td>
+				<td>weight</td>
+				<td>size</td>
+				<td>line-height</td>
+				<td>family</td>
+			</tr>
+			<tr>
+				<th>border</th>
+				<td>width</td>
+				<td>style</td>
+				<td>color</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>margin</th>
+				<td>top</td>
+				<td>right</td>
+				<td>bottom</td>
+				<td>left</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>background</th>
+				<td>color</td>
+				<td>image</td>
+				<td>repeat</td>
+				<td>position</td>
+				<td></td>
+			</tr>
+		</tbody>
+
+	</table>
+<p>https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties</p>
+	
+<h2>Funções</h2>
+<ul>
+	<li>rgb(r,g,b)</li>
+	<li>url("link")</li>
+	<li>calc(100%-10px)</li>
+	<li>etc()</li>
+</ul>
+<p>funções recebem argumentos que são valores</p>
+
+<h2>DevTools ou F12</h2>
+<p>Auxilia a conhecer como as coisas foram aplicadas em cada site com o intuito de podermos aplicarmos e entermos melhor o que queremos fazer</p>
+<h2>Vendor Prefixes</h2>
+<p>Permitem que browser adicionem caracteristicas novas do css</p>
+<p> 
+	-webkit-background-clip: text; /*Chrome, Safari, iOS e Android*/<br>
+	-moz-background-clip: text; /* Mozilla (Firefox) */<br>
+	-ms-background-clip: text; /* Internet Explorer ou Edge*/<br>
+	-o-background-clip: text; /* Opera */<br>
+
+	<a href="https://ireade.github.io/which-vendor-prefix">https://ireade.github.io/which-vendor-prefix</a><br>
+    <a href="https://caniuse.com">https://caniuse.com</a>
+	<a href="https://autoprefixer.github.io/">https://autoprefixer.github.io/</a>
+</p>
+<h3>Property:Value</h3>
+<p>site para pesquisar propriedades css: *neste link já está pesquisando sobre color  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color#examples">https://developer.mozilla.org/en-US/docs/Web/CSS/color#examples</a></p>
+<pre>
+	<h2>Tipos numéricos</h2>
+&lt;integer> - número inteiro como -10 ou 223
+&lt;number> - número decimal como -2.4, 64 ou 0.234
+&lt;dimension> - é um &lt;number&gt; com uma unidade junto: 90deg (graus), 2s (segundos), 8px (pixels)
+&lt;percentage> - representa uma fração de outro número: 50%
+	<h2>Unidades comuns</h2>
+&lt;length> - é um dos mais usados no CSS e representa um valor de distância: px (pixels), em, vw
+&lt;angle> - representa um ângulo: deg (graus), rad (radianos), turn (giro)
+&lt;time> - representa um tempo: s, ms
+&lt;resolution> - representa resoluções para dispositivos: dpi
+</pre>
+
+<pre>
+	<h3>Distâncias absolutas</h3> &lt;length>
+		São fixas e não alteram seu valor.
+		
+		| Unidade  | Nome                | Equivalência         |
+		|----------|---------------------|----------------------|
+		| cm       | Centímetros         | 1cm = 96px/2.54      | 
+		| in       | Inches (polegadas)  | 1in = 2.54cm = 96px  | 
+		| px       | Pixels              | 1px = 1/96th of 1in  |
+		*o mais comum e mais utilizado é o px
+		
+		*não é recomendado usar cm
+		
+		<h3>Distâncias relativas</h3>
+		São relativas a um outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela.
+		Benefício: Maior adaptação aos diferentes tipos de tela.
+		| Unidade  | Relativo a                                    |
+		|----------|-----------------------------------------------|
+		| em       | Tamanho da font do elemento pai               |
+		| rem      | Tamanho da font do elemento raiz (root/html)  | 
+		| vw       | 1% da viewport wid                            |  
+		| vh       | 1% da viewport height                         |
+		
+		<b>Por padrão a tag body não tem altura definida apenas largura, então quando queremos algo numa altura padrão
+			utilizamos o vh por exemplo: 
+			body{
+				height:100vh; *irá pegar 100% da altura da viewport e aplicar em body
+			} 
+		</b>
+</pre>
+<p> &ltdiv> &ltp> Conteudo &lt/p>  &lt/div> </p>
+<pre>
+	div{ font-size:18px}
+	p{ font-size:1em} 1em é 18px pq a div que é o elemento pai foi definida para 18px<br>
+	se utilizarmos <b>1rem</b> vai pegar na raiz do html, caso não esteja definido vai pegar o padão.<br>
+	o padrão de font-size é 16px
+	para alterar o valor padrão basta alterar no css. há duas formas
+	
+	:root { font-size: novo valor}
+	html { font-size: novo valor}
+</pre>
+<p><a href="pagina2.html">Listas em listas</a><pre>
+	&lt;ul>
+	&lt;li>One&lt;/li>
+	&lt;li>Two&lt;/li>
+	&lt;li>Three
+		&lt;ul>
+			&lt;li>Three A&lt;/li>
+			&lt;li>Three B&lt;/li>
+			&lt;ul>
+				&lt;li>Three B 2&lt;/li>
+			&lt;/ul>
+		&lt;/ul>
+	&lt;/li>
+&lt;/ul>
+li {
+    font-size: 80%;
+}
+	a formatação acontece em li, porem as li dentro da li pai ficam com 80% do tamanho da li pai e assim se segue.
+</pre> </p>
+
+<h3>Valor/Data-Type Position</h3>
+<p>Representa um conjunto de coordenadas 2D:<br>
+	top, right, bottom, left e center<br>
+	Usado para alguns tipos de propriedades como o background-position<br>
+	Não confundir com a propriedade position
+</p>
+<div class="caixaya">
+</div>
+
+<p></p>
+<img src="Imagens/artur.jfif" class="rodapeimg">
+
+<div class="rodape" id="rodape" >
+
+	<h3 class="rodapeHome"><a href="#Organizador">Home</a></h3>
+</div>
+<script src="tutorial.js"></script>
+<noscript>You need to enable JavaScript to view the full site.</noscript>
+
+</body>
+
+</html>

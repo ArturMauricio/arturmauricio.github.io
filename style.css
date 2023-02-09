@@ -6,5 +6,8 @@ body{
   background-color:rgb(220,220,220);
 }
 div{
-border: 1px solid blue;
+  border: 1px solid blue;
+}
+.menu{
+   display:inline;
 }
